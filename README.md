@@ -1,7 +1,7 @@
 # Yandex music desktop app
-Yandex Music web app. Electron powered. Supports MacOs, Windows, Linux.
+Yandex Music web app. Electron powered. Supports macOS, Windows, Linux.
 
-Support media keys (play/pause/prev/next)
+Support media keys (play/pause/prev/next). Note: if you're having troubles when binding media keys on MacOS Mojave and later, try to add app into accessibility trusted list in System Preferences.
 
 # Build Requirements
 
@@ -10,5 +10,5 @@ Support media keys (play/pause/prev/next)
 # Build
 
 ```bash
-$ ./build.sh
+$ make
 ```
