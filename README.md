@@ -5,7 +5,7 @@ Support media keys (play/pause/prev/next). Note: if you're having troubles when 
 
 Also sends notification when track is changed with short info.
 
-[[https://github.com/NazarkinRoman/yandex.music/blob/master/notification_screenshot.png]]
+![notification](https://github.com/NazarkinRoman/yandex.music/blob/master/notification_screenshot.png)
 
 # Build Requirements
 
