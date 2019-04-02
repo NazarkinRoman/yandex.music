@@ -1,5 +1,5 @@
 'use strict';
-const {globalShortcut, dialog} = require('electron').remote;
+const {globalShortcut, dialog, app} = require('electron').remote;
 const currentWindow = require('electron').remote.getCurrentWindow();
 const currentWebContents = currentWindow.webContents;
 
@@ -18,8 +18,10 @@ const init = () => {
 	
 		new Notification('Yandex.Music: Track changed', {
 			silent: true,
-			body: `Album:  ${trackInfo.album.title} (${trackInfo.album.year})\r\nTrack: ${artists} - ${trackInfo.title}`
+			body: `Album: ${trackInfo.album.title} (${trackInfo.album.year})\r\nTrack: ${artists} - ${trackInfo.title}`
 		});
+		
+		app.dock.setBadge('');
 	});
 	
 	// bind play/pause button
